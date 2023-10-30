@@ -33,8 +33,8 @@ input:focus{
     color: #86a8e7;
 }
 
-.todos li span:first-child{
-    margin-right: 20px;
+span{
+    margin-right: 10px;
     text-align:center;
     height:50px;
     width: 0;
@@ -42,18 +42,7 @@ input:focus{
     -webkit-transition:0.3s;
     transition: 0.3s linear;
 }
-.todos li span:last-child{
-    position: absolute;
-    text-align:center;
-    right:0px;
-    top: 15px;
-    height:50px;
-    width: 0px;
-    opacity: 0;
-    color: tomato;
-    -webkit-transition:0.3s;
-    transition: 0.3s linear;
-}
+
 i{
     cursor: pointer;
 }
@@ -133,20 +122,14 @@ button:hover {
     line-height: 50px;
     cursor: pointer;
     font-size: 20px;
-    position: relative;
 }
 .todos li:nth-child(2n){
     background:#edf1f5;
 }
-.todos li:hover span:first-child{
+.todos li:hover span{
     width: 50px;
     opacity: 1.0;
     margin-left: 5px;
-}
-.todos li:hover span:last-child{
-    width: 50px;
-    opacity: 1.0;
-    right: 15px;
 }
 .display{
     display:none;
@@ -156,10 +139,12 @@ button:hover {
     color:gray;
     text-decoration:line-through;
 }
-.important{
+
+/* .important{
     color: tomato;
     font-weight: bold;
-}
+} */
+
 .fa-pencil-alt{
     float: right;
     padding-top: 8px;
